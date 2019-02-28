@@ -1,0 +1,21 @@
+We will be using Scikit learn (sklearn). It is a Python toolbox
+for our tutorial.
+
+ Step 1 : Visulization of the dataset
+
+ y = x/2 + sin(x) + N(0,1)
+
+ Step 2: Split the data
+ Training (70%)
+ Validation (15%)
+ Test (15%)
+
+ Step 3: Fit a linear Model
+
+ Model.fit => Calculates the man squared error for every single training
+ set and optimizes it. The error will be minimized by the
+ gradient decend method.
+
+
+ Step 4: Evaluation of the model. It will be done through Mean
+ Squared Error
