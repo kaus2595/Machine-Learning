@@ -19,7 +19,7 @@ plt.xlabel("Population")
 plt.ylabel("Median House Value")
 plt.legend()
 y_pred = reg.predict(x)
-
+print(y_pred)
 r2_score = reg.score(x,y)
 print(r2_score)
 plt.show()
