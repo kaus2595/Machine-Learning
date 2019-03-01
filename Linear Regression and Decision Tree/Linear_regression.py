@@ -4,13 +4,13 @@ import matplotlib.pyplot as plt
 
 
 #Reading Data
-data = pd.read_csv("california_housing_train.csv")
+data = pd.read_csv("regression.csv")
 print(data.shape)
 #print(data.head())
 
 #Taking the columns from the dataset on which we have to work on
-x = data['population']
-y = data['median_house_value']
+x = data['X']
+y = data['Y']
 
 #Finding the mean of x and y
 mean_x = np.mean(x)
@@ -43,7 +43,7 @@ y = b0+b1*x
 plt.plot(x,y,color='#58b970', label="Regression Line")
 plt.scatter(x,y, c="#ef5423", label = "Scatter Plot")
 
-plt.xlabel("Population")
-plt.ylabel("Median House Value")
+plt.xlabel("X")
+plt.ylabel("Y")
 plt.legend()
 plt.show()
