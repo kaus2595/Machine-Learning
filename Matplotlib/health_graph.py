@@ -9,14 +9,15 @@ print(data.shape)
 #print(data.head())
 
 #Taking the columns from the dataset on which we have to work on
-x = data['HEALTH ISSUE']
-y = data['AGE']
+objects = data['HEALTH ISSUE'][52:]
+y_pos = np.arange(len(objects))
+performance = data['Count'][52:]
+#print(y_number)
+
 
 #Plotting the graph between x and y
-plt.plot(x,y,color='#58b970')
-#plt.scatter(x,y, c="#ef5423", label = "Scatter Plot")
-
+plt.bar(y_pos,performance,align="center",color='#58b970')
+plt.xticks(y_pos,objects)
 plt.xlabel("AGE")
-plt.ylabel("HEALTH ISSUE")
-plt.legend()
+#plt.ylabel("HEALTH ISSUE")
 plt.show()
