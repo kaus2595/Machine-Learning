@@ -9,11 +9,9 @@ print(data.shape)
 #print(data.head())
 
 #Taking the columns from the dataset on which we have to work on
-objects = data['HEALTH ISSUE'][52:]
+objects = data['HEALTH ISSUE'][53:65]
 y_pos = np.arange(len(objects))
-performance = data['Count'][52:]
-#print(y_number)
-
+performance = data['Count'][53:65]
 
 #Plotting the graph between x and y
 plt.bar(y_pos,performance,align="center",color='#58b970')
